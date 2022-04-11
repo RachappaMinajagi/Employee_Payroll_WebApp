@@ -143,7 +143,6 @@ select {
     border: 1px solid #707070;
     cursor: pointer;
 }
-
 .submitButton{
     border: none;
     margin-right: 30px;
@@ -201,4 +200,10 @@ select {
         width: 85%;
         padding: 44px 20px;
     }
+}
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }

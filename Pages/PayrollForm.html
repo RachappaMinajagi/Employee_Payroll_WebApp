@@ -1,7 +1,7 @@
 <!--
-    Modify Employee Payroll Class with new Attributes and Getters and Setters
-   - New Attributes added are Department, Gender, Employee Notes, Profile Pic, etc
-   – Getters and Setters are used for all properties and Constructor is made default
+    Ability to set Event Listeners when Document is loaded so as to
+    - Set Event Listener on Salary Range to display appropriate value
+    - Validation of Name and Date
 -->
 
 <!DOCTYPE html>
@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/employee-form.css">
     <script defer src="../js/validate.js"></script>
+    <script defer src="../js/EmpPayRollData.js"></script>
 
 </head>
 <body>
@@ -140,6 +141,7 @@
                     </select>
                     <select id="year" name="Year">
                         <option value="Year">Year</option>
+                        <option value='2021'>2021</option>
                         <option value='2020'>2020</option>
                         <option value='2019'>2019</option>
                         <option value='2018'>2018</option>
@@ -147,6 +149,7 @@
                         <option value='2016'>2016</option>
                     </select>
                 </div>
+                <error-output class="date-error" for="startDate"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text">Notes</label>
@@ -155,7 +158,7 @@
             <div class="button-content">
                 <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton" onclick="submitButton()">Submit</button>
+                    <button type="submit" class="button submitButton" id="submitButton" >Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
