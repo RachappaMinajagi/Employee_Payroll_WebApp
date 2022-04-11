@@ -145,17 +145,22 @@ select {
 }
 
 .submitButton{
+    border: none;
     margin-right: 30px;
     background-color:whitesmoke;
 }
 
 .cancelButton{
+    border: none;
     text-decoration: none;
     text-align: center;
     background-color: whitesmoke;
+    margin-right:30px ;
 }
 .resetButton {
+    border: none;
     background-color: whitesmoke;
+    margin: right 30px ;
 }
 
 @media only screen and (max-width: 600px){
