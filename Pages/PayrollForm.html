@@ -1,5 +1,5 @@
 <!--
-    Ability to specify the start date with Day, Month and Year as Select Input Item
+    Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -139,6 +139,17 @@
                         <option value='2017'>2017</option>
                         <option value='2016'>2016</option>
                     </select>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text">Notes</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px"></textarea>
+            </div>
+            <div class="button-content">
+                <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="submitButton button" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
         </form>
